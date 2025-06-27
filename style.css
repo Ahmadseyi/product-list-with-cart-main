@@ -19,6 +19,8 @@ body {
   flex-direction: column;
   min-height: 100vh;
   text-align: center;
+  padding: 25px;
+  margin-top: 10px;
   /* display: grid;
   place-items: center; */
   /* margin-top: 10px; */
