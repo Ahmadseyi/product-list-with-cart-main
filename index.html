@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./Style.css" />
+    <title>Frontend Mentor | Product list with cart</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Desserts</h1>
+    <section class="cards">
+      <div class="card">
+        <picture>
+          <!-- For screens wider than 1024px -->
+          <source
+            media="(min-width: 1024px)"
+            srcset="assets\images\image-waffle-desktop.jpg"
+          />
+
+          <!-- For screens between 600px and 1023px -->
+          <source
+            media="(min-width: 600px)"
+            srcset="assets\images\image-waffle-tablet.jpg"
+          />
+
+          <!-- For small screens (default fallback) -->
+          <img
+            class="image"
+            product.jpg
+            src="assets\images\image-waffle-mobile.jpg"
+          />
+        </picture>
+        <div clas class="button-group" s="button-group">
+          <button class="cart">
+            <img src="assets\images\icon-add-to-cart.svg" />Add cart
+          </button>
+        </div>
+        <p>Waffle</p>
+        <p><strong>Waffle with Berries</strong></p>
+        <p class="text">6.50</p>
+      </div>
+
+      <div class="card">
+        <picture>
+          <!-- For screens wider than 1024px -->
+          <source
+            media="(min-width: 1024px)"
+            srcset="assets\images\image-creme-brulee-desktop.jpg"
+          />
+
+          <!-- For screens between 600px and 1023px -->
+          <source
+            media="(min-width: 600px)"
+            srcset="assets\images\image-creme-brulee-tablet.jpg"
+          />
+
+          <!-- For small screens (default fallback) -->
+          <img
+            class="image"
+            src="assets\images\image-creme-brulee-mobile.jpg"
+          />
+        </picture>
+        <div class="button-group">
+          <button class="cart">
+            <img src="assets\images\icon-add-to-cart.svg" />Add to Cart
+          </button>
+        </div>
+        <p>Crème Brûlée</p>
+        <p><strong>Vanilla Bean Crème Brûlée</strong></p>
+        <p class="text">7.00</p>
+      </div>
+      <div class="card">
+        <picture>
+          <!-- For screens wider than 1024px -->
+          <source
+            media="(min-width: 1024px)"
+            srcset="assets\images\image-macaron-desktop.jpg"
+          />
+
+          <!-- For screens between 600px and 1023px -->
+          <source
+            media="(min-width: 600px)"
+            srcset="assets\images\image-macaron-tablet.jpg"
+          />
+
+          <!-- For small screens (default fallback) -->
+          <img class="image" src="assets\images\image-macaron-mobile.jpg" />
+        </picture>
+        <div class="button-group">
+          <button class="cart">
+            <img src="assets\images\icon-add-to-cart.svg" />Add to Cart
+          </button>
+        </div>
+        <p>Macaron</p>
+        <p><strong>Macaron Mix of Five</strong></p>
+        <p class="text">8.00</p>
+      </div>
+      <div class="card">
+        <picture>
+          <!-- For screens wider than 1024px -->
+          <source
+            media="(min-width: 1024px)"
+            srcset="assets\images\image-tiramisu-desktop.jpg"
+          />
+
+          <!-- For screens between 600px and 1023px -->
+          <source
+            media="(min-width: 600px)"
+            srcset="assets\images\image-tiramisu-tablet.jpg"
+          />
+
+          <!-- For small screens (default fallback) -->
+          <img class="image" src="assets\images\image-tiramisu-mobile.jpg" />
+        </picture>
+        <div class="button-group">
+          <button class="cart">
+            <img src="assets\images\icon-add-to-cart.svg" />Add to Cart
+          </button>
+        </div>
+        <p>Tiramisu</p>
+        <p><strong>Classic Tiramisu</strong></p>
+        <p class="text">5.50</p>
+      </div>
+      <div class="card">
+         <picture>
+          <!-- For screens wider than 1024px -->
+          <source
+            media="(min-width: 1024px)"
+            srcset="assets\images\image-baklava-desktop.jpg"
+          />
+
+          <!-- For screens between 600px and 1023px -->
+          <source
+            media="(min-width: 600px)"
+            srcset="assets\images\image-baklava-tablet.jpg"
+          />
+
+          <!-- For small screens (default fallback) -->
+          <img class="image" src="assets\images\image-baklava-mobile.jpg" />
+        </picture>
+        <div class="button-group">
+          <button class="cart">
+            <img src="assets\images\icon-add-to-cart.svg" />Add to Cart
+          </button>
+        </div>
+        <p>Baklava</p>
+        <p><strong>Pistachio Baklava</strong></p>
+        <p class="text">4.00</p>
+      </div>
+      <div class="card">
+        <picture>
+          <!-- For screens wider than 1024px -->
+          <source
+            media="(min-width: 1024px)"
+            srcset="assets\images\image-meringue-desktop.jpg"
+          />
+
+          <!-- For screens between 600px and 1023px -->
+          <source
+            media="(min-width: 600px)"
+            srcset="assets\images\image-meringue-tablet.jpg"
+          />
+
+          <!-- For small screens (default fallback) -->
+          <img class="image" src="assets\images\image-meringue-mobile.jpg" />
+        </picture>
+        <div class="button-group">
+          <button class="cart">
+            <img src="assets\images\icon-add-to-cart.svg" />Add to Cart
+          </button>
+        </div>
+        <p>Pie</p>
+        <p><strong>Lemon Meringue Pie</strong></p>
+        <p class="text">5.00</p>
+      </div>
+      <div class="card">
+        <picture>
+          <!-- For screens wider than 1024px -->
+          <source
+            media="(min-width: 1024px)"
+            srcset="assets\images\image-cake-desktop.jpg"
+          />
+
+          <!-- For screens between 600px and 1023px -->
+          <source
+            media="(min-width: 600px)"
+            srcset="assets\images\image-cake-tablet.jpg"
+          />
+
+          <!-- For small screens (default fallback) -->
+          <img class="image" src="assets\images\image-cake-mobile.jpg" />
+        </picture>
+        <div class="button-group">
+          <button class="cart">
+            <img src="assets\images\icon-add-to-cart.svg" />Add to Cart
+          </button>
+        </div>
+        <p>Cake</p>
+        <p><strong>Red Velvet Cake</strong></p>
+        <p class="text">4.50</p>
+      </div>
+      <div class="card">
+        <picture>
+          <!-- For screens wider than 1024px -->
+          <source
+            media="(min-width: 1024px)"
+            srcset="assets\images\image-brownie-desktop.jpg"
+          />
+
+          <!-- For screens between 600px and 1023px -->
+          <source
+            media="(min-width: 600px)"
+            srcset="assets\images\image-brownie-tablet.jpg"
+          />
+
+          <!-- For small screens (default fallback) -->
+          <img class="image" src="assets\images\image-brownie-mobile.jpg" />
+        </picture>
+        <div class="button-group">
+          <button class="cart">
+            <img src="assets\images\icon-add-to-cart.svg" />Add to Cart
+          </button>
+        </div>
+        <p>Brownie</p>
+        <p><strong>Salted Caramel Brownie</strong></p>
+        <p class="text">4.50</p>
+      </div>
+      <div class="card">
+        <picture>
+          <!-- For screens wider than 1024px -->
+          <source
+            media="(min-width: 1024px)"
+            srcset="assets\images\image-panna-cotta-desktop.jpg"
+          />
+
+          <!-- For screens between 600px and 1023px -->
+          <source
+            media="(min-width: 600px)"
+            srcset="assets\images\image-panna-cotta-tablet.jpg"
+          />
+
+          <!-- For small screens (default fallback) -->
+          <img class="image" src="assets\images\image-panna-cotta-mobile.jpg" />
+        </picture>
+        <div class="button-group">
+          <button class="cart">
+            <img src="assets\images\icon-add-to-cart.svg" />Add to Cart
+          </button>
+        </div>
+        <p>Panna Cotta</p>
+        <p><strong>Vanilla Panna Cotta</strong></p>
+        <p class="text">6.50</p>
+      </div>
+    </section>
+    <div class="attribution">
+      <a href="https://wa.me/+2347042620278" target="_blank"
+        >Coded by Ogunsanya Ahmad Oluwaseyi</a
+      >
+    </div>
+  </body>
+</html>
