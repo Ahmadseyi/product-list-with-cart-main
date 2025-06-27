@@ -283,5 +283,16 @@
         >Coded by Ogunsanya Ahmad Oluwaseyi</a
       >
     </div>
+    <script>
+      const addBtns = document.querySelectorAll(".add");
+      // console.log(addBtns);
+      addBtns.forEach((addBtns) => {
+        //console.log (addBtn.textContent);
+        addBtn.addEventListener("click", () => {
+          console.log("You clicked me");
+          alert("Check back later, Still add under construction.");
+        });
+      });
+    </script>
   </body>
 </html>
